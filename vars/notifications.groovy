@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 import groovy.json.JsonOutput
 
-def call(text, channel, urlSlack, attachments) {
+def notifySlack(text, channel, urlSlack, attachments) {
     def slackURL = slackurlSlackUrl
     def jenkinsIcon = 'https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png'
 
