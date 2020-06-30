@@ -2,7 +2,7 @@
 import groovy.json.JsonOutput
 
 def call(text, channel, urlSlack) {
-    def slackURL = slackurlSlackUrl
+    def slackURL = urlSlack
     def jenkinsIcon = 'https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png'
 
     def payload = JsonOutput.toJson([text: text,
